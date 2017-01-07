@@ -9,8 +9,8 @@ public class Graph {
 	public Node[] nodes;
 
 	public Graph(int[,] grid) {
-		rows = grid [0];
-		cols = grid [1];
+		rows = grid.GetLength(0);
+		cols = grid.GetLength (1);
 
 		nodes = new Node[grid.Length];
 		for (var i = 0; i < nodes.Length; i++) {

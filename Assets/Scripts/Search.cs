@@ -67,7 +67,7 @@ public class Search {
 	}
 
 	public Node ChooseNode() {
-		return reachable [Random.RandomRange (0, reachable.Count)];
+		return reachable [Random.Range (0, reachable.Count)];
 	}
 
 	public int GetNodeIndex(Node node, List<Node> list) {
@@ -81,7 +81,7 @@ public class Search {
 	}
 
 	public void AddAdjecent(Node node, Node adjacent) {
-		if (FindNode (adjacent, explored) || FindNode (Adjacent, reachable)) {
+		if (FindNode (adjacent, explored) || FindNode (adjacent, reachable)) {
 			return; 
 		}
 
