@@ -33,7 +33,7 @@ public class Graph {
 				}
 
 				// Right
-				if (c > cols-1) {
+				if (c < cols-1) {
 					node.adjecent.Add (nodes [cols * r + c+1]); 
 				}
 
